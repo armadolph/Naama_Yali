@@ -1,0 +1,44 @@
+/* 
+Selector:{
+    ...
+}
+*/
+
+
+div{
+    background: purple;
+    color: white
+}
+/* To select ID use # */
+#quote{
+    font-family: "verdana", "gill sans";
+    color: black
+}
+
+/* To select class use . */
+.Movie {
+    color: white;
+    background: steelblue;
+}
+
+span#author {
+    text-transform: uppercase;
+}
+
+#skills ol li{
+    background: white;
+    color: purple;
+}
+
+#skills ul li{
+    background: black;
+    color: purple;
+}
+
+h3 + p{
+    background: blue;
+}
+
+p[class]{
+    background: orange;
+}

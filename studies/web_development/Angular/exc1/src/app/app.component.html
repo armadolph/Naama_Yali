@@ -1,0 +1,50 @@
+<div>
+    <h2> Server info</h2>
+    <input type="text" placeholder="Server Name" [(ngModel)] = "ServerName">    
+    <!-- <input type="text" placeholder="Server Name" [ngModel] = "ServerName">     -->
+</div>
+
+<div>
+    <p> Server name {{ServerName}} the server status is {{ServerStatus}}</p>
+    <button [disabled]="buttonState" (click)="toggleServerStatus()">toggle server status</button>
+</div>
+
+<br> <br> <br>
+
+<div>
+    <h2> Assignment 2</h2>
+    <input type="text" name="First Name" placeholder="Submit your name" [(ngModel)] = "newInput">    
+    <p>First Name: {{newInput}}</p>
+    <button [disabled]="isEmpty()" (click) = "resetName()">Name reset</button>
+</div>
+
+<br> <br> <br>
+
+<div>
+    <h2 [ngStyle]="{color: getColor()}"> New example of ngIf</h2>
+    <h3 [ngClass]="{white: flag}"> This is ne</h3>
+    <p *ngIf="flag; else elseblock">Flag is True</p>
+    <ng-template #elseblock>
+        <p> Flag is False </p>
+    </ng-template>
+
+    <button (click)="ToggleFlag()">Toggle Flag</button>
+</div>
+<br><br><br>
+<div>
+    <h1> Student </h1>
+    <input type="text" placeholder="name" [(ngModel)]="student_name">
+    <button (click)="add()"> Submit </button>
+
+    <li *ngFor="let name of studentArray">{{ name }}</li>
+</div>
+<br><br><br>
+
+<div>
+    <h1> Assignment 3 </h1>
+
+    <button (click)="toggleParagraph()"> Toggle Paragraph</button>
+    <p [ngStyle]="{background: getClickedColor()}">num_clicked: {{ num_clicked }}</p>
+    <p *ngIf="paragraph_flag">I'm the paragraph to be displaied </p>
+
+</div>

@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+.homepage_image{
+    background-image:url('image/dining_room.jpg');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 400px;
+}
+
+.new_messages{
+    direction: rtl;
+    /* float: right; */
+    position: relative;
+    padding: 100px;
+
+}
+
+.new_messages_header{
+    text-align: right;
+}
+
+.new_messages_list{
+    text-align: right;
+}
+.dining_room{
+    width: 90%; 
+}
+
+.dining_room_text{
+    float: left; 
+    direction: rtl;
+    text-align: right;
+    width: 30%;
+    /* margin-left: 200px; */
+
+}
+.dining_room_pic{
+    float: right; 
+    width: 30%
+}
+
+.marcol{
+    margin-top: 100px;
+    clear: both;
+    width: 90%;
+}
+
+.marcol_text{
+    float: right; 
+    direction: rtl;
+    text-align: right;
+    width: 30%;
+    margin-right: 200px;
+
+}
+.marcol_pic{
+    float: left; 
+    width: 50%;
+    /* height: 50%; */
+
+}
+
+.clear{
+    clear:both;
+}
+
+.contacts{
+    /* background-color : lightblue; */
+    padding: 50px;
+    width: 100%;
+
+}
+ .contacts_text{
+    float: right;
+ }

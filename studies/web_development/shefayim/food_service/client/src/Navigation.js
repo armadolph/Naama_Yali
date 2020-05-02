@@ -1,7 +1,6 @@
 import React, { Component} from 'react';
 import { Navbar,  Nav} from 'react-bootstrap';
 
-
 class Navigation extends Component{
   render(){
     return(
@@ -11,7 +10,7 @@ class Navigation extends Component{
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-      <Nav.Link href="#link">הכירו את הצוות</Nav.Link>
+      <Nav.Link href="Theteam.js">הכירו את הצוות</Nav.Link>
       <Nav.Link href="#link">חדר אוכל</Nav.Link>
       <Nav.Link href="#link">מרכול</Nav.Link>
         {/* <NavDropdown title="חדר אוכל" id="dining-room">

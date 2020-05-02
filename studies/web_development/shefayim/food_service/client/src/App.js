@@ -1,8 +1,6 @@
 import React, { Component} from 'react';
 import Navigation from './Navigation.js';
-import Homepage from './Homepage.js';
 import './App.css';
-
 
 class App extends Component{
   render (){
@@ -10,9 +8,6 @@ class App extends Component{
       <div>
         <div>
           <Navigation></Navigation>
-        </div>
-        <div>
-          <Homepage></Homepage>
         </div>
     </div>
     )
